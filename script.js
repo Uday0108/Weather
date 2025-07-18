@@ -88,7 +88,7 @@ async function process(){
     apparentImage.height  = 40;   
     apparentImage.width  = 40;   
     
-    dayOrNight.src =  (hour <=5 || hour > 18 ) ? "moon.png" : "sun.gif" ;
+    dayOrNight.src =  (hour <=5 || hour > 18 ) ? "moon.gif" : "sun.gif" ;
     dayOrNight.height = 35;
     dayOrNight.width = 35;
 
