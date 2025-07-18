@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="c">
+    <title>Document</title>
+    <link rel="shortcut icon" href="rainbow.png">
+</head>
+<body>
+    
+    <div class="container" >
+
+        <div style="display: flex;">
+            <input type="text" placeholder="country / city / place.. " id = "location">
+            <button id="btn" style="display: flex;" > 
+                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/>
+                </svg> 
+            </button>
+        </div>
+        
+        <div style="border: black; " >
+
+            <div style="display: grid; justify-content: center; align-items: center; margin-bottom: 10px;  " >
+                <h1 id="weatherIcon" style=" text-align: center; font-size: 50px; margin: 5px;" ></h1> 
+                <h1 id="temp_c" style=" text-align: center; font-size: 35px; margin: 2px; font-weight:300;" ></h1> 
+            </div>
+            
+            <div style="display: flex; justify-content: space-evenly; align-items: center; " >                
+                <div style="display: flex; align-items: center;"  >
+                    <img id="humidImg"  src="" alt="">
+                    <div style="text-align: center;">
+                        <h2 id="humidity" style="font-size: 25px; margin: 0;"></h2> 
+                        <p  id="humidityPara" style="margin: 0; font-size: 12px;"></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; ">
+                    <img id="appImg" src="" alt="">
+                    <div style="text-align: center;">
+                        <h2 id="app_temperature" style="font-size: 25px; margin: 0;"></h2> 
+                        <p id="app_temperaturePara" style="margin: 0; font-size: 12px;"></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div style="display: flex; align-items: center; margin-top: 5px; margin-bottom: 6px;  " >
+                <img id="dayOrNight" src="" alt="" > &nbsp;&nbsp;
+                <h2 id="time"></h2> &nbsp; &nbsp;
+                <h2 id="day"></h2> 
+            </div>
+
+            <div style="display: flex; align-items: center;" >
+                <img id="locationImage" src="" alt=""> &nbsp;&nbsp;
+                <h2 id="lat_lon"></h2> 
+            </div>
+
+        </div>
+
+        <div style="">
+            <h1 style="font-size: 14px; align-items: center; font-family: ysabeau Infant; font-weight: 400; font-style: italic;" >• All the weather-related data is retrieved from the <a href="https://open-meteo.com/">@Open-Meteo API.</a></h1>
+            <h1 style="font-size: 14px; align-items: center; font-family: ysabeau Infant; font-weight: 400; font-style: italic;" >• All the time-related data is retrieved from the <a href="https://timezonedb.com/">@TimeZoneDB API.</a></h1>
+        </div>
+        
+    </div>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>
