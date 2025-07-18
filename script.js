@@ -36,7 +36,7 @@ async function fetchData(){
             console.log("error fetching temperature....")
         
         
-        timeJson = await fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=E5MPA8P5WLC1&format=json&by=position&lat=${lat}&lng=${lon}`);
+        timeJson = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=E5MPA8P5WLC1&format=json&by=position&lat=${lat}&lng=${lon}`);
         
         if(!timeJson.ok)
         console.log("time error....")
